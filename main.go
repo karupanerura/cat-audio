@@ -24,7 +24,7 @@ func main() {
 
 	sources := flag.Args()
 	if output == "" || len(sources) == 0 {
-		log.Fatalf("Usage: cat-audio -o output.wav part1.wav part2.wav ...")
+		log.Fatalf("Usage: cat-audio -out output.wav part1.wav part2.wav ...")
 	}
 
 	run(output, sources)
